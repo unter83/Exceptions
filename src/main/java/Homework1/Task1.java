@@ -3,7 +3,7 @@ package Homework1;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Main {
+public class Task1 {
     public static void main(String[] args) {
         System.out.println("Программа показывает выполнение трех разных исключений\n");
         int num1 = 0, num2 = 0;
