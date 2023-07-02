@@ -46,6 +46,30 @@ public class User {
         this.sex = sex;
     }
 
+    public String getSecondName() {
+        return secondName;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getFatherName() {
+        return fatherName;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public String getBirthDate() {
+        return birthDate;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
     @Override
     public String toString() {
         return "User{" +
