@@ -54,8 +54,11 @@ public class Parser {
                 String day = array[i].substring(0, 2);
                 String month = array[i].substring(3, 5);
                 String year = array[i].substring(6);
-                if (isNum(day) && isNum(month) && isNum(year)) {
-                    return i;
+                if ((isNum(day) && isNum(month) && isNum(year) &&
+                        (Integer.parseInt(month) > 0 && Integer.parseInt(month) < 13) &&
+                        (Integer.parseInt(day) > 0 && Integer.parseInt(day) < 32) &&
+                        (Integer.parseInt(year) > 1900 && Integer.parseInt(year) < 2024))) {
+                        return i;
                 }
             }
         }
