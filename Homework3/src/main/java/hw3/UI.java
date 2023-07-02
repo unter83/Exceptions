@@ -11,7 +11,7 @@ public class UI {
 
     }
     public void askData() {
-        Scanner sc = new Scanner(System.in,"Cp1251");
+        Scanner sc = new Scanner(System.in);
         System.out.println("Введите данные человека(Фамилия имя отчество, дата рождения, номер телефона, пол:");
         String data = sc.nextLine();
         Controller controller = new Controller(data);

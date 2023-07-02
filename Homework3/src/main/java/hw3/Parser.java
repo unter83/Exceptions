@@ -67,15 +67,10 @@ public class Parser {
         for (int i = 0; i < array.length; i++) {
             String str = array[i];
             str.toLowerCase();
-            if (array[i].length() == 0 && (array[i].toLowerCase() == "m" ||
-                    array[i].toLowerCase() == "f" ||
-                    array[i].toLowerCase() == "м" ||
-                    array[i].toLowerCase() == "ж"))
-//            if (array[i].length() == 0 && (Character.toLowerCase(array[i].charAt(0)) == 'm' ||
-//                    Character.toLowerCase(array[i].charAt(0)) == 'f' ||
-//                    Character.toLowerCase(array[i].charAt(0)) == 'м' ||
-//                    Character.toLowerCase(array[i].charAt(0)) == 'ж'))
-                return i;
+            if (array[i].length() == 1)
+                if (array[i].toLowerCase().equals("m")  ||
+                    array[i].toLowerCase().equals("f"))
+                    return i;
         }
         throw new WrongEntireException("Неправильный ввод. " +
                 "Проверьте пол");
